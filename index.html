@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Compito Form <span style="color: var(--primary)">JS</span></h1>
+    <br />
+    <form>
+      <label for="name">Name <span>*</span></label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        value="Edson Andres"
+        maxlength="50"
+        required
+      />
+
+      <label for="surname">Surname <span>*</span></label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        value="Villa Sanchez"
+        maxlength="50"
+        required
+      />
+
+      <label for="email">Email <span>*</span></label>
+      <input type="email" id="email" name="email" value required />
+
+      <div class="psw-label-container">
+        <label for="password">Password <span>*</span></label>
+        <div class="check"></div>
+      </div>
+      <input
+        type="password"
+        id="password"
+        class="password"
+        name="password"
+        required
+      />
+
+      <div class="psw-label-container">
+        <label for="password_check">Confirm Password <span>*</span></label>
+        <div class="check"></div>
+      </div>
+      <input type="password" id="password_check" class="password" required />
+
+      <span style="font-size: 12px" id="email_error_message"> </span>
+      <span style="font-size: 12px" id="psw_not_match"> </span>
+      <span style="font-size: 12px" id="psw_error_message"> </span>
+      <ul id="psw_errors"></ul>
+
+      <div class="show-password">
+        <input
+          type="checkbox"
+          name="show-password"
+          id="toggle_password"
+          onclick="showPasswords()"
+        />
+        <label for="toggle_password">Mostra Password</label>
+      </div>
+
+      <button type="button">Registrati</button>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ffb703;
+  --primary-lighter: color-mix(in srgb, #ffb703, #fff 15%);
+}
+
+html {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 5px 15px #000;
+}
+
+form span {
+  color: #ff0000;
+}
+
+label {
+  margin-top: 10px;
+}
+
+label:nth-child(1) {
+  margin-top: 6px;
+}
+
+input {
+  margin: 6px 0 10px 0;
+  padding: 5px 0 5px 5px;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+button {
+  width: fit-content;
+  margin: 15px auto 0;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: var(--primary);
+  box-shadow: 0 4px #999;
+  margin-bottom: 4px;
+}
+
+button:hover {
+  background: var(--primary-lighter);
+}
+
+button:active {
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+
+.psw-label-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.psw-label-container div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.danger {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+
+ul {
+  margin-left: 15px;
+}
+
+ul#psw_errors li {
+  color: #000;
+  font-size: 12px;
+}
+
+.show-password {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-password input,
+.show-password label {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
