@@ -93,7 +93,8 @@ function changeCircleColor() {
   CHECK_PASSWORD_CIRCLE.forEach((circle) => {
     circle.classList.remove("success", "danger");
 
-    getInputValue(PASSWORD) === getInputValue(CONFIRM_PASSWORD)
+    getInputValue(PASSWORD) === getInputValue(CONFIRM_PASSWORD) &&
+    passwordCheck()
       ? (circle.classList.add("success"), (NO_MATCH_ERROR.innerHTML = ""))
       : (circle.classList.add("danger"),
         (NO_MATCH_ERROR.innerHTML = "Le password non combaciano"));
